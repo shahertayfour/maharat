@@ -223,17 +223,17 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="text-center card-hover bg-light-gray rounded-2xl p-8 border border-gray-100">
-            <div class="stats-number mb-2">5,500+</div>
+            <div class="stats-number mb-2">60+</div>
             <div class="text-medium-gray font-medium text-lg">Professionals Trained</div>
             <div class="w-16 h-1 bg-gradient-to-r from-gold to-yellow-600 mx-auto mt-4 rounded-full"></div>
           </div>
           <div class="text-center card-hover bg-light-gray rounded-2xl p-8 border border-gray-100">
-            <div class="stats-number mb-2">200+</div>
+            <div class="stats-number mb-2">6+</div>
             <div class="text-medium-gray font-medium text-lg">Corporate Partners</div>
             <div class="w-16 h-1 bg-gradient-to-r from-gold to-yellow-600 mx-auto mt-4 rounded-full"></div>
           </div>
           <div class="text-center card-hover bg-light-gray rounded-2xl p-8 border border-gray-100">
-            <div class="stats-number mb-2">80+</div>
+            <div class="stats-number mb-2">15+</div>
             <div class="text-medium-gray font-medium text-lg">Training Programs</div>
             <div class="w-16 h-1 bg-gradient-to-r from-gold to-yellow-600 mx-auto mt-4 rounded-full"></div>
           </div>
@@ -448,10 +448,235 @@
       </div>
     </section>
 
-    <!-- Feedback Section -->
+<!-- (continuing Feedback Section) -->
     <section id="feedback" class="py-24 bg-light-gray">
       <div class="max-w-4xl mx-auto px-6">
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Training Feedback</h2>
           <p class="text-xl text-medium-gray leading-relaxed">
-            Your valuable insights help us continuously refine an
+            Your valuable insights help us continuously refine and elevate our training programs.
+          </p>
+        </div>
+        <div class="bg-white rounded-3xl shadow-elegant p-8 glass-effect border border-gray-100">
+          <form id="feedbackForm" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="fb-name" class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                <input id="fb-name" name="name" type="text" placeholder="Your name" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition" />
+              </div>
+              <div>
+                <label for="fb-email" class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                <input id="fb-email" name="email" type="email" placeholder="you@example.com" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition" />
+              </div>
+            </div>
+            <div>
+              <label for="fb-course" class="block text-sm font-semibold text-gray-700 mb-2">Course Attended</label>
+              <select id="fb-course" name="course" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition">
+                <option value="">Select a course</option>
+                <option>Artificial Intelligence</option>
+                <option>Cloud Computing</option>
+                <option>Cybersecurity</option>
+                <option>Data Science</option>
+                <option>Blockchain</option>
+                <option>IoT & Edge Computing</option>
+              </select>
+            </div>
+            <div>
+              <label for="fb-instructor" class="block text-sm font-semibold text-gray-700 mb-2">Instructor Name</label>
+              <input id="fb-instructor" name="instructor" type="text" placeholder="Instructor name" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition" />
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <span class="block text-sm font-semibold text-gray-700 mb-2">Overall Rating</span>
+                <div class="star-rating" data-rating="overall">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                </div>
+              </div>
+              <div>
+                <span class="block text-sm font-semibold text-gray-700 mb-2">Content Quality</span>
+                <div class="star-rating" data-rating="content">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="fb-comments" class="block text-sm font-semibold text-gray-700 mb-2">Additional Comments</label>
+              <textarea id="fb-comments" name="comments" rows="4" placeholder="Share your thoughts..." class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition"></textarea>
+            </div>
+            <button type="submit" class="w-full btn-primary text-white py-3 rounded-full font-medium transition">Submit Feedback</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">From Our Blog</h2>
+        <p class="text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed">
+          Stay updated with insights, industry trends, and program highlights from Maharat experts.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Post Card -->
+        <div class="bg-light-gray rounded-3xl shadow-elegant-lg overflow-hidden card-hover">
+          <img src="assets/images/blog/blockchain-post.jpg" alt="Blockchain in Government" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-bold text-primary mb-3">Blockchain Transforming Public Services</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              Discover how blockchain solutions are streamlining government processes in the UAE.
+            </p>
+            <a href="#" class="text-accent font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+        <div class="bg-light-gray rounded-3xl shadow-elegant-lg overflow-hidden card-hover">
+          <img src="assets/images/blog/ai-summer.jpg" alt="AI Summer School" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-bold text-primary mb-3">Recap: AI Summer School with NYUAD</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              Highlights from our partnership with NYU Abu Dhabi on immersive AI learning.
+            </p>
+            <a href="#" class="text-accent font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+        <div class="bg-light-gray rounded-3xl shadow-elegant-lg overflow-hidden card-hover">
+          <img src="assets/images/blog/career-tips.jpg" alt="Future Skills" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-bold text-primary mb-3">5 Key Skills for Tomorrow’s Jobs</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              Our experts share the top capabilities employers will demand by 2030.
+            </p>
+            <a href="#" class="text-accent font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-24 bg-light-gray">
+      <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Our Partners</h2>
+        <p class="text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed">
+          Proudly collaborating with government, academia, and industry leaders.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
+        <img src="assets/images/partners/adgm.png" alt="ADGM Academy" class="mx-auto hover:scale-105 transition-transform">
+        <img src="assets/images/partners/ministry-ai.png" alt="Ministry of AI" class="mx-auto hover:scale-105 transition-transform">
+        <img src="assets/images/partners/microsoft.png" alt="Microsoft Gulf" class="mx-auto hover:scale-105 transition-transform">
+        <img src="assets/images/partners/khalifa.png" alt="Khalifa University" class="mx-auto hover:scale-105 transition-transform">
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">Get in Touch</h2>
+          <p class="text-xl text-medium-gray mb-8 leading-relaxed">
+            Have questions about our programs, partnerships, or events? Send us a message and we'll get back to you within 24 hours.
+          </p>
+          <form id="contactForm" class="space-y-6">
+            <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition" />
+            <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition" />
+            <input type="text" name="phone" placeholder="Your Phone (optional)" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition" />
+            <select name="inquiry" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition">
+              <option value="">Select Inquiry Type</option>
+              <option>Program Details</option>
+              <option>Partnership</option>
+              <option>Media & PR</option>
+              <option>Other</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Your Message" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent transition"></textarea>
+            <button type="submit" class="btn-primary text-white px-6 py-3 rounded-full font-medium transition">Send Message</button>
+          </form>
+        </div>
+        <div class="h-80 rounded-3xl overflow-hidden shadow-elegant-lg">
+          <iframe 
+            src="https://maps.google.com/maps?q=Abu%20Dhabi%20Global%20Market%20ADGM&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-full"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 py-12">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h4 class="font-serif font-bold text-xl text-white mb-4">Maharat Training</h4>
+          <p class="leading-relaxed">
+            © 2025 Maharat Limited. Registered in ADGM. All rights reserved.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-xl text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#programs" class="hover:text-white transition">Programs</a></li>
+            <li><a href="#blog" class="hover:text-white transition">Blog</a></li>
+            <li><a href="#partners" class="hover:text-white transition">Partners</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-xl text-white mb-4">Follow Us</h4>
+          <div class="flex space-x-6 text-2xl">
+            <a href="#" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+    // Language toggle stub
+    function toggleLanguage() {
+      alert('Language switch to العربية coming soon!');
+    }
+    // Star rating interaction
+    document.querySelectorAll('.star').forEach(star => {
+      star.addEventListener('click', () => {
+        const container = star.parentElement;
+        container.querySelectorAll('.star').forEach(s => s.classList.remove('active'));
+        container.querySelectorAll('.star').forEach(s => {
+          if (+s.dataset.value <= +star.dataset.value) s.classList.add('active');
+        });
+      });
+    });
+    // Feedback form submission
+    document.getElementById('feedbackForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you! Your feedback has been submitted.');
+      e.target.reset();
+    });
+    // Contact form submission
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you! We will be in touch within 24 hours.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
+
+
